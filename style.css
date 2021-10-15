@@ -39,6 +39,7 @@ body{
     background: url(images/bg-pattern-mobile.svg) no-repeat;
     background-position: top;
     height: 120px;
+    position: relative;
 }
 
 .card__img{
@@ -74,10 +75,12 @@ body{
     width: 93%;
     display: inline-block;
     font-size: 1.1em;
+    transition: color 350ms;
 }
 .card__arrow{
     width: 15px;
     display: inline-block;
+    transition: transform 500ms;
 }
 .card-text-2{
     margin-top: 15px;
@@ -92,10 +95,10 @@ body{
     cursor: pointer;
 }
 
-
 .card__img-1{
     display: none;
 }
+
 .box{
     display: none;
     position: absolute;
@@ -104,7 +107,6 @@ body{
 /*javascript_________*/
 .active{
     height: auto;
-    transition: 350ms;
 }
 
 /* link */
@@ -176,5 +178,9 @@ body{
         display: inline-block;
         top: 215px;
         left: -92px;
+        transition: top 1s;
+    }
+    .box:hover{
+        top: 165px;
     }
 }
